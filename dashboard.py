@@ -8,7 +8,7 @@ import requests
 st.set_page_config(page_title="Dashboard Annonces", layout="wide")
 
 # --- Charger les données depuis GitHub ---
-URL_JSON = "https://github.com/lma20255/my-site-portfolio/blob/main/data/av.json"
+URL_JSON = "https://raw.githubusercontent.com/lma20255/my-site-portfolio/refs/heads/main/data/av.json"
 
 @st.cache_data(ttl=3600)  # Cache pendant 1h
 def load_data():
